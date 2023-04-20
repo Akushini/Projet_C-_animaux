@@ -37,7 +37,8 @@ namespace ConsoleApp1.Service
             string rarity = "";
             string specie = "";
 
-            while(reader.Read()) 
+            while(reader.Read())
+            
             {
                 id = reader.GetInt32(0);
                 name = reader.GetString(1);

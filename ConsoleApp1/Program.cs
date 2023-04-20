@@ -75,13 +75,13 @@ class Program
             Console.WriteLine("Voulez-vous continuer ? Oui : o / Non : n");
             string anwser = Console.ReadLine();
 
-            Type type  = Type.GetType("Animals.Models." + specie);
+            /*Type type  = Type.GetType("Animals.Models." + specie);
             object[] xx = { name, rarity, specie };
             Animal instance = (Animal)Activator.CreateInstance(type, xx);
             if (anwser == "n")
             {
                 stop = true;
-            }
+            }*/
 
         }
         mybdd.Read();
