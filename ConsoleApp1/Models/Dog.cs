@@ -6,25 +6,28 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1.Models
 {
-    public class Chien : Animal
+    public class Dog : Animal
     {
 
-        public Chien()
+        public Dog()
         {
         }
 
-        public Chien(string name, string rarity)
+        public Dog(string name, string rarity, string specie, int id)
         {
             Name = name;
             Rarity = rarity;
+            Specie = specie;
+            Id = id;
         }
+
         public override void Moove()
         {
-            Console.WriteLine("Le griffon a un vol agile");
+            Console.WriteLine("12 m au sol");
         }
-        new public void Sleep()
+        public override void Sleep()
         {
-            Console.WriteLine("Le griffon dort dans des cavernes isolées");
+            Console.WriteLine("12 à 14h par jour");
         }
     }
 }

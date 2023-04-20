@@ -6,33 +6,35 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1.Models
 {
-    public class Dragon : Animal, IPilotage, IFlying
+    public class Eagles : Animal, IPilotage, IFlying
     {
 
-        public Dragon()
+        public Eagles()
         {
         }
 
-        public Dragon(string name, string rarity, string specie, int id)
+        public Eagles(string name, string rarity, string specie, int id)
         {
             Name = name;
             Rarity = rarity;
-            Specie = specie;
+            Specie = Specie;
             Id = id;
         }
 
         public void Fly()
         {
-            Console.WriteLine("60 m en vol");
+            Console.WriteLine("18 m en vol");
         }
 
         public override void Moove()
         {
-            Console.WriteLine("12 m au sol");
+            Console.WriteLine("3 m au sol");
         }
         public override void Sleep()
         {
-            Console.WriteLine("14 à 16h par jour");
+            Console.WriteLine("10 à 12 heures par jour");
         }
+
+
     }
 }

@@ -11,26 +11,23 @@ namespace ConsoleApp1.Models
         public string Name { get; protected set; }
         public string Rarity { get; protected set; }
         public int Id { get; protected set; }
-
-        private static int LastId = 0;
+        public string Specie { get; protected set; }
 
         public Animal()
         {
         }
 
-        public Animal(string name, string rarity)
+        public Animal(string name, string rarity, string specie, int id)
         {
             Name = name;
             Rarity = rarity;
-            Id = ++LastId;   
+            Specie = specie;
+            Id = id;
         }
 
         public abstract void Moove();
 
-        public void Sleep()
-        {
-            Console.WriteLine("Sleep");
-        }
+        public abstract void Sleep();
     }
 }
 
